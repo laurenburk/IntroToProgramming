@@ -11,8 +11,8 @@ def multiplication():
 def division():
     return x / y
     
-x = float(input("Enter the first number->"))
-y = float(input("Enter the second number->"))
+x = int(input("Enter the first number->"))
+y = int(input("Enter the second number->"))
 
 print("Addition:", addition())
 print("Subtraction:", subtraction())
