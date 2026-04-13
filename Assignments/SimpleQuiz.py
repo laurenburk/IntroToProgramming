@@ -32,3 +32,19 @@ if answer_five == "Graceland":
     print("You are very smart! That is correct!")
 else:
     print("That is incorrect. The correct answer is Graceland.")
+
+def tally_score():
+    score = 0
+    if answer_one == "52":
+        score += 1
+    if answer_two == "Vincent Vega":
+        score += 1
+    if answer_three == "Russia":
+        score += 1
+    if answer_four == "Octagon":
+        score += 1
+    if answer_five == "Graceland":
+        score += 1
+    return score
+
+print("Your total score is: " + str(tally_score()) + "/5")
