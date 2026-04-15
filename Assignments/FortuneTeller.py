@@ -11,27 +11,29 @@ def fortune():
         if age < 18 and siblings == 0 and lucky_number <= 10:
             print("You will be a famous singer!")
 
-        if age < 18 and siblings >= 0 and lucky_number > 10 and lucky_number <= 20:
+        elif age < 18 and siblings >= 0 and lucky_number > 10 and lucky_number <= 20:
             print("You will be a famous athlete!")
 
-        if age <18 and siblings == 0 and lucky_number > 20 and lucky_number <= 30:
+        elif age <18 and siblings == 0 and lucky_number > 20 and lucky_number <= 30:
             print("You will get in a car crash soon...")
 
-        if age < 18 and siblings == 1 and lucky_number <= 20:
+        elif age < 18 and siblings == 1 and lucky_number <= 20:
             print("You will have a pet anteater!")
 
-        if age < 18 and siblings >= 2 and lucky_number <= 30:
+        elif age < 18 and siblings >= 2 and lucky_number <= 30:
             print("You will live to 120 years old!")
 
-        if age > 18 and siblings == 0 and lucky_number <= 10:
+        elif age > 18 and siblings == 0 and lucky_number <= 10:
             print("You will be a famous actor!")
 
-        if age > 18 and siblings >= 3 and lucky_number > 10 and lucky_number <= 20:
+        elif age > 18 and siblings >= 3 and lucky_number > 10 and lucky_number <= 20:
             print("You will be a famous chef!")
 
-        if age > 18 and siblings >= 1 and lucky_number > 20 and lucky_number <= 30:
+        elif age > 18 and siblings >= 1 and lucky_number > 20 and lucky_number <= 30:
             print("You will be a successful entrepreneur!")
 
+        elif age > 18 and siblings >= 2 and lucky_number < 10:
+            print("You will be a famous scientist!")
     except:
         print("Please enter a valid input!")
     
