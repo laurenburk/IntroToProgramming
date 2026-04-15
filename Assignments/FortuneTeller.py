@@ -1,20 +1,38 @@
 print("Today you will learn about your fortune! Answer the following questions to find out what your future holds!")
-name = input("What is your name?->")
+
 age = int(input("How old are you?->"))
-favorite_color = input("What is your favorite color?->")
+
+siblings = int(input("How many siblings do you have?->"))
+
+lucky_number = int(input("What is your lucky number between 1 and 30?->"))
 
 def fortune():
-    if favorite_color == "red":
-        return "You may experience love in your future..."
-    elif favorite_color == "blue":
-        return "You may experience a hardship in your future, but it will make you stronger..."
-    elif favorite_color == "green":
-        return "You may have a large sum of money in your future..."
-    elif favorite_color == "yellow":
-        return "You may have a long and happy life in your future..."
-    elif favorite_color == "purple":
-        return "Relax, you will see your success blossom soon enough..."
-    else:
-        return "Your future is a mystery, but it will be an interesting one!"
+    try:
+        if age < 18 and siblings == 0 and lucky_number <= 10:
+            print("You will be a famous singer!")
+
+        if age < 18 and siblings >= 0 and lucky_number > 10 and lucky_number <= 20:
+            print("You will be a famous athlete!")
+
+        if age <18 and siblings == 0 and lucky_number > 20 and lucky_number <= 30:
+            print("You will get in a car crash soon...")
+
+        if age < 18 and siblings == 1 and lucky_number <= 20:
+            print("You will have a pet anteater!")
+
+        if age < 18 and siblings >= 2 and lucky_number <= 30:
+            print("You will live to 120 years old!")
+
+        if age > 18 and siblings == 0 and lucky_number <= 10:
+            print("You will be a famous actor!")
+
+        if age > 18 and siblings >= 3 and lucky_number > 10 and lucky_number <= 20:
+            print("You will be a famous chef!")
+
+        if age > 18 and siblings >= 1 and lucky_number > 20 and lucky_number <= 30:
+            print("You will be a successful entrepreneur!")
+
+    except:
+        print("Please enter a valid input!")
     
 print(fortune())
