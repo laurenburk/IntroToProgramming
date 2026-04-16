@@ -36,5 +36,6 @@ def fortune():
             print("You will be a famous scientist!")
     except ValueError:
         print("Please enter a valid input!")
+        fortune()
     
-print(fortune())
+fortune()
