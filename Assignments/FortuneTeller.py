@@ -1,13 +1,13 @@
 print("Today you will learn about your fortune! Answer the following questions to find out what your future holds!")
 
-age = int(input("How old are you?->"))
-
-siblings = int(input("How many siblings do you have?->"))
-
-lucky_number = int(input("What is your lucky number between 1 and 30?->"))
-
 def fortune():
     try:
+        age = int(input("How old are you?->"))
+
+        siblings = int(input("How many siblings do you have?->"))
+
+        lucky_number = int(input("What is your lucky number between 1 and 30?->"))
+       
         if age < 18 and siblings == 0 and lucky_number <= 10:
             print("You will be a famous singer!")
 
@@ -34,7 +34,7 @@ def fortune():
 
         elif age > 18 and siblings >= 2 and lucky_number < 10:
             print("You will be a famous scientist!")
-    except:
+    except ValueError:
         print("Please enter a valid input!")
     
 print(fortune())
