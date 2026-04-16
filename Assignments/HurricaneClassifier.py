@@ -18,6 +18,6 @@ def hurricane_category(wind_speed):
             return "That is a Category 1 Hurricane."
     
     except (wind_speed < 74):
-        print("You are overreacting. That is not a Hurricane.")
+        return ("You are overreacting. That is not a Hurricane.")
 
-print(hurricane_category(wind_speed))
+hurricane_category()
