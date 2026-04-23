@@ -297,6 +297,10 @@ def sit_on_rock():
     elif sit_on_rock_choice == "3":
         ignore_caterpillar()
 
+    else:
+        print("Invalid choice. Please choose 1, 2, or 3.")
+        sit_on_rock()
+
 
 def eat_pear():
     print("Slowly, you chomp down the giant pear.")
@@ -379,7 +383,7 @@ def investigate_scream():
         free_her()
 
     elif investigate_scream_choice == "2":
-        walk_away_from()
+        walk_away()
 
     else:
         print("Invalid choice. Please choose 1 or 2.")
@@ -476,6 +480,10 @@ def left_cave_path():
     elif left_cave_path_choice == "2":
         steal_gold()
 
+    else: 
+        print("Invalid choice. Please choose 1 or 2.")
+        left_cave_path()
+
 
 def right_cave_path():
     print("You take a right into a glowing tunnel.")
@@ -483,5 +491,147 @@ def right_cave_path():
     print("Game Over.")
 
     
+def climb_down():
+    print("You slowly make your way, scaling down a steep path to the bottom of the waterfall.")
+    print("You make sure to carefully take each step.")
+    print("But...")
+    print("You take a wrong step and slip on a rock.")
+    print("Though the fall was kind of peaceful, you didn't make it.")
+    print("Game Over.")
+
+
+def enjoy_view():
+    print("You decide to sit on the edge of the cliff with your feet in the water.")
+    print("You breath in the fresh air and take it all in.")
+    print("You are thankful for this life.")
+    print("Congrats! You win!")
+
+
+def jump():
+    print("With a running start, you jump off the edge.")
+    print("That was just stupid.")
+    print("Game Over.")
+
+
+def scream_and_shake():
+    print("You scream like a little girl and rapidly shake your hand around.")
+    print("You pause to examine the bite, and see that it is starting to swell.")
+    print("A large purple bump forms and you begin to feel dizzy.")
+    print("You pass out and unfortunately hit your head on a rock.")
+    print("Game Over.")
+
+
+def gently_remove():
+    print("You calmly lift the caterpillar off of your hand and see a bump forming.")
+    print("He looks back at you with what appears to be a smile.")
+    print("He says, 'Dip your hand in the water.'")
+    print("You do, and the bump disappears.")
+    print("You've made a friend.")
+    print("Congrats! You win!")
+
+def ignore_caterpillar():
+    print("You allow the caterpillar to continue walking on your arm.")
+    print("He bites you three more times.")
+    print("The bite spots swell up into giant purple bumps.")
+    print("You begin to feel dizzy.")
+    print("You pass out and unfortunately hit your head on a rock.")
+    print("Game Over.")
+
+
+def climb_tree():
+    print("Excited, you hastily climb a tree.")
+    print("Without paying attention, you miss a branch.")
+    print("You fall, hitting every branch on the way down.")
+    print("Game Over.")
+
+
+def explore_garden():
+    print("You decide to try another fruit, wondering what ability you'll get next.")
+    print("You pick up a tiny watermelon and pop the whole thing into your mouth.")
+    print("You wait until you feel your stomach bubble up.")
+    print("Game Over.")
+
+
+def nearest_town():
+    print("He gives you a ride to the nearest town.")
+    print("His house is on the way, and he says he has to make a pit stop.")
+    print("You scrambles into his house, and is gone for about 15 minutes.")
+    print("What should you do?")
+    print("1. Steal the car.")
+    print("2. Knock on his door.")
+
+    nearest_town_choice = input(">>>")
+
+    if nearest_town_choice == "1":
+        steal_car()
+
+    elif nearest_town_choice == "2":
+        knock_on_door()
+
+    else: 
+        print("Invalid choice. Please choose 1 or 2.")
+        nearest_town()
+
+
+def end_of_river():
+    print("He gives you a ride to the end of the river.")
+    print("You thank him for the ride, and jump into the river.")
+    print("You swim into the sunset.")
+    print("Congrats! You win!")
+    
+
+def free_her():
+    print("You attempt to free her, but the tree branch won't come free.")
+    print("You decide to cut the branch.")
+    print("The branch snaps in two and the girl jumps up.")
+    print("She gives you a hug and rans away.")
+    print("Congrats! You win!")
+
+
+def walk_with_her():
+    print("You take her hand and say, 'It'll be okay.'")
+    print("She says, 'I know.'")
+    print("You look away, slightly confused.")
+    print("But then, she eats you whole.")
+    print("Game Over.")
+
+
+def open_tomb():
+    print("You slowly slide off the cover, and hear a groan from inside.")
+    print("A mummy rises up and looks at you.")
+    print("He asks, 'Have you come to hear my story?")
+    print("What do you say?")
+    print("1. Yes.")
+    print("No.")
+
+    open_tomb_choice = input(">>>")
+
+    if open_tomb_choice == "1":
+        yes_tomb()
+
+    elif open_tomb_choice == "2":
+        no_tomb()
+
+    else:
+        print("Invalid choice. Please choose 1 or 2.")
+        open_tomb()
+
+
+def steal_gold():
+    print("You reach for the gold, but there seems to be some sort of shield.")
+    print("A mummy rises from the tomb and yells, 'You are done.'")
+    print("You are disintegrated in a second.")
+    print("Game Over.")
+
+
+def steal_car():
+    print("You slide into the driver's seat and shift gears.")
+    print("But, you realize there aren't any keys.")
+    print("He sees, and kicks you out of the car.")
+    print("You are lost. Game Over.")
+
+
+def knock_on_door():
+    print("You decide to knock on the door.")
 
 start_game()
