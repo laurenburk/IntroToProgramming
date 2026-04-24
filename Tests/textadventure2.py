@@ -1,5 +1,3 @@
-name = input("What is your name? >>> ")
-
 def start_game():
     print("The sun shines brightly in your eyes as you lay on soft grass.")
     print("You look around and see a beautiful meadow with colorful flowers and a clear blue sky.")
@@ -633,5 +631,50 @@ def steal_car():
 
 def knock_on_door():
     print("You decide to knock on the door.")
+    print("A stranger opens the door, and says, 'Would you like to come in?'")
+    print("Do you enter?")
+    print("1. Yes")
+    print("2. No")
+
+    knock_on_door_choice = input(">>>")
+
+    if knock_on_door_choice == "1":
+        enter_door()
+
+    elif knock_on_door_choice == "2":
+        dont_enter()
+
+    else:
+        print("Invalid Choice. Please choose 1 or 2.")
+        knock_on_door()
+
+
+def yes_tomb():
+    print("You say, 'I would like to hear your story.'")
+    print("The mummy smiles with rotten teeth.")
+    print("He tells his story and you learn from his wisdom.")
+    print("You live a long healthy life.")
+    print("Congrats! You win!")
+
+
+def no_tomb():
+    print("You say, 'No, thank you.'")
+    print("The mummy frowns at you and reaches for your neck.")
+    print("The mummy curses you for life.")
+    print("Game Over.")
+
+
+def enter_door():
+    print("You enter their small cottage and are met with an comforting home.")
+    print("You end up speaking for hours.")
+    print("The couple ends up adopting you and taking you in as their own.")
+    print("Congrats! You win a long, healthy life.")
+
+
+def dont_enter():
+    print("You say, 'No, thanks. I'll find my way home.'")
+    print("The stranger says, 'Be careful.'")
+    print("While trying to be independent, you get lost.")
+    print("Game Over.")
 
 start_game()
