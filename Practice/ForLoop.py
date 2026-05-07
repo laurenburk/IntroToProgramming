@@ -26,8 +26,8 @@ enter_string = input("Please enter a string\n>>>")
 vowels = ["a", "e", "i", "o", "u"]
 vowel_total = 0
 
-for char in enter_string:
-    if char in vowels:
+for letter in enter_string:
+    if letter in vowels:
         vowel_total += 1
 print(str(vowel_total) + " Vowels")
 
