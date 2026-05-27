@@ -4,7 +4,7 @@ with open("C:\\Users\\825949\\Documents\\Intro to Programming\\IntroToProgrammin
     found = False
 
 for line in lines:
-    if "waldo" in line.casefold():
+    if "waldo" in line.lower():
         found = True
         break
 
